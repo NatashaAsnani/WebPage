@@ -1,0 +1,31 @@
+.nav-link.active {
+    border-radius: 25px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.nav-link:hover{
+    background-color: rgba(0, 157, 255, 0.648) !important;
+    color: white !important;
+    border-radius: 25px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+h3{
+    color: rgb(110, 203, 228);
+    font-size: 30pt !important;
+    font-weight: bold;
+}
+.contact{
+    background-color: rgba(68, 87, 117, 0.817);
+}
+.send{
+    border-radius: 25px;
+    background-color: rgb(110, 203, 228);
+    color: darkblue;
+    border: none;
+    padding: 20px;
+}

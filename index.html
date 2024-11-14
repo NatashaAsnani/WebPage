@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer></script>
+</head>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.nav-link').on('click', function () {
+      $('.nav-link').removeClass('active');
+      $(this).addClass('active');
+    });
+  });
+</script>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">AT Your Doors</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="row">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="caro1.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption">
+                            <h1 class="text-center text-white"> <strong>Welcome To Our <u style="color: rgb(117, 211, 255);"> Website</u> </strong> </h1>
+                            <p class="text-center text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ad inventore velit molestias maiores. In, ab repellat placeat qui voluptatibus asperiores maxime cupiditate, ut aut, alias architecto beatae velit rem!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="caro2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption">
+                            <h1 class="text-center text-white"> <strong>You're at the right place!</strong> </h1>
+                            <p class="text-center text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ad inventore velit molestias maiores. In, ab repellat placeat qui voluptatibus asperiores maxime cupiditate, ut aut, alias architecto beatae velit rem!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="caro3.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption">
+                            <h1 class="text-center text-white"> <strong>What are you looking for?</strong> </h1>
+                            <p class="text-center text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ad inventore velit molestias maiores. In, ab repellat placeat qui voluptatibus asperiores maxime cupiditate, ut aut, alias architecto beatae velit rem!</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <h3 class="text-center mt-5">About Us</h3>
+            <div class="col-8">
+                <p class="px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, consectetur? Ratione, sapiente tempore. Enim, nisi sed non id expedita rerum exercitationem. Nam eveniet explicabo, cupiditate et odio fugit obcaecati amet?Lorem ipsum dolor sit amet consectetur adipisicing elit. Non adipisci praesentium rerum at esse accusantium quo animi in magnam sint? Adipisci culpa dicta laboriosam nisi delectus, dolor similique laborum maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex praesentium nobis natus eveniet unde, ut corporis sequi cupiditate? Commodi quisquam minus minima error eos hic quaerat est. Delectus, blanditiis a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore praesentium sapiente amet quas sunt quam ea, rerum sed vitae reiciendis debitis unde ut, et sequi cupiditate quia quibusdam facere labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore praesentium sapiente amet quas sunt quam ea, rerum sed vitae reiciendis debitis unde ut, et sequi cupiditate quia quibusdam facere labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore praesentium sapiente amet quas sunt quam ea, rerum sed vitae reiciendis debitis unde ut, et sequi cupiditate quia quibusdam facere labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore praesentium sapiente amet quas sunt quam ea, rerum sed vitae reiciendis debitis unde ut, et sequi cupiditate quia quibusdam facere labore.</p>
+            </div>
+            <div class="col-4">
+                <img src="person3.jpg" alt="" width="350px">
+            </div>
+        </div>
+        <div class="row contact mt-5">
+            <h3 class="text-center">Contact Us</h3>
+            <div class="col">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28832.02542816024!2d68.29728361083981!3d25.404704199999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394c71d27b1cdac5%3A0xe196ca0db918174!2sMy%20Business%20solution!5e0!3m2!1sen!2s!4v1731602829834!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-12 col-md-6 my-4 contactform">
+                <div class="input-group">
+                    <input type="text" aria-label="Name" class="form-control" placeholder="Name"> 
+                    <input type="email" aria-label="Email" class="form-control" placeholder="Email">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="subject form-control" id="exampleInput2" placeholder="Subject" required>
+                </div>
+                <div class="mb-3">
+                    <textarea class="text form-control" name="" id="" rows="10" placeholder="Enter Your Message" required></textarea>
+                </div>
+                <button type="submit" class="send">Send Message</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
