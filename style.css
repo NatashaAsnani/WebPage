@@ -1,3 +1,6 @@
+.container-fluid{
+    overflow-x: hidden;
+}
 .nav-link.active {
     border-radius: 25px;
     padding-left: 20px !important;
@@ -28,4 +31,16 @@ h3{
     color: darkblue;
     border: none;
     padding: 20px;
+}
+
+@media (min-width:300px) and (max-width:500px){
+    .map{
+        width: 380px !important;
+    }
+    .caption{
+        font-size: 8pt;
+    }
+    .caption h1{
+        font-size: medium !important;
+    }
 }
